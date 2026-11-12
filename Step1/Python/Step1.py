@@ -408,8 +408,7 @@ def calculate_error(Rs, Rds):
         Rd = Rds[:,:,i]
 
         error[i] = 2 * np.trace(I - R.T @ Rd)
-    if N > 2:
-        error[-1] = error[-2]
+   
     #pass
     return error
     
